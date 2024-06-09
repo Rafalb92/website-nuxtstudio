@@ -20,5 +20,10 @@
         >Open Nuxt UI Documentation</UButton
       >
     </UCard>
+    <ContentDoc v-slot="{ doc }">
+      <article>
+        <ContentRenderer :value="doc" />
+      </article>
+    </ContentDoc>
   </UContainer>
 </template>
